@@ -12,7 +12,7 @@
     packages.x86_64-linux = {
       assembler = pkgs.callPackage ./src/assembler/derivation.nix {};
       disassembler = pkgs.callPackage ./src/disassembler/derivation.nix {};
-      emulator = pkgs.callPackage ./src/core/derivation.nix {sdl3 = nixpkgs.sdl3;};
+      emulator = pkgs.callPackage ./src/core/derivation.nix {sdl3 = pkgs.sdl3;};
     };
 
   };
